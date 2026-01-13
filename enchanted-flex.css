@@ -1,0 +1,78 @@
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+body {
+  background-color: #EDFCFB;
+  margin: 0;
+  font-family: "Book Antiqua", serif;
+  color: #333;
+}
+#menu_wrapper {
+  border: 3px solid #783F27;
+  margin: 2em auto;
+  width: 90%;
+  background: white;
+  padding: 1em;
+}
+#menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+#menu section {
+  width: 250px;
+  border: 2px solid #783F27;
+  border-radius: 6px;
+  padding: 1em;
+  margin: 1em;
+  background-color: #fffdf6;
+  
+  display: flex;
+  flex-direction: column;
+}
+#menu .intro {
+  background-color: #8A5731;
+  color: #FFD15A;
+  font-family: "Marko One", Georgia, serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#menu .intro h1 {
+  margin: 0;
+  line-height: 1.2em;
+  font-size: 2.4em;
+}
+#menu section h2 {
+  margin: 0;
+  font-family: Tahoma, sans-serif;
+  font-size: 0.8em;
+  color: #8A5731;
+}
+#menu section h3 {
+  margin: 0.3em 0;
+  font-family: Tahoma, sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+#menu section p {
+  font-size: 0.9em;
+  margin: 0.3em 0;
+}
+
+#menu section img {
+  width: 100%;
+  border-radius: 5px;
+  margin: 0.5em 0;
+}
+#menu section .price {
+  margin-top: auto;
+  background-color: #FFB252;
+  padding: 0.5em;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 4px;
+  font-family: Georgia, serif;
+  color: #3a2a16;
+}
+

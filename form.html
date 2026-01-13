@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order from The Enchanted Cup!</title>
+  <style>
+    body {
+      background-color: #EDFCFB;
+      margin: 0 10%;
+      font-family: "Book Antiqua", serif;
+    }
+    h1 {
+      text-align: center;
+      font-family: Impact, sans-serif;
+      font-weight: normal;
+      text-transform: uppercase;
+      border-bottom: 5px solid #B4C973;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: #FFB252;
+    }
+    h2, h3, h4, h5 {
+      color: #7851A9;
+      font-family: Tahoma, sans-serif;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-top: 20px;
+      padding: 15px;
+    }
+    legend {
+      font-weight: bold;
+      color: #7851A9;
+    }
+    label {
+      display: inline-block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 5px;
+      font-family: "Book Antiqua", serif;
+    }
+    input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+      width: 100%;
+    }
+    input[type="submit"], input[type="reset"] {
+      background-color: #FFB252;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: #B4C973;
+    }
+    video, img {
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>
+    Customize Your Order | Desserts
+  </h1>
+
+  <p><h4>Our magical treats are available for custom orders!  
+  Design your perfect drink or dessert and we’ll prepare it with a touch of enchantment.</h4></p>
+
+  <form action="" method="POST">
+    <h3> Fill Out The Information Below </h3>
+
+    <fieldset>
+      <legend><h5>Your Information</h5></legend>
+
+      <label for="fullname">Name:</label>
+      <input type="text" id="fullname" placeholder="Jane Joe"><br><br>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address"><br><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" placeholder="(313)-123-2222"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="jane@example.com">
+    </fieldset>
+
+    <fieldset>
+      <legend><h5>Order Type</h5></legend>
+      <label>Whimsical Cake</label>
+      <input type="radio" name="OrderType">
+      <p></p>
+      <label>Enchanted Drink</label>
+      <input type="radio" name="OrderType">
+      <p></p>
+      <label>Magical Snack</label>
+      <input type="radio" name="OrderType">
+    </fieldset>
+
+    <fieldset>
+      <legend><h5>Toppings & Add-Ons</h5></legend>
+
+      <h4>Choose a Flavor Topping</h4>
+      <label>Fairy Dust (Powdered Sugar)</label>
+      <input type="radio" name="Topping">
+      <p></p>
+
+      <label>Moonlight Caramel Drizzle</label>
+      <input type="radio" name="Topping">
+      <p></p>
+
+      <label>Starberry Glaze</label>
+      <input type="radio" name="Topping">
+      <p></p>
+
+      <label for="drizzle"><h4>Extra Drizzle</h4></label>
+      <select id="drizzle">
+        <option value="vanilla">Vanilla Frost</option>
+        <option value="chocolate">Dark Enchantment Chocolate</option>
+        <option value="pistachio">Mystic Pistachio Sauce</option>
+      </select><br><br>
+
+      <label for="extra">Add extra drizzle?</label>
+      <input type="checkbox" id="extra">
+    </fieldset>
+
+    <fieldset>
+      <legend><h5>Special Requests</h5></legend>
+      <label for="comments"><em>Write any magical delivery notes here:</em></label><br>
+      <textarea id="comments" rows="3" cols="25"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend><h5>Quantity</h5></legend>
+      <label for="quantity">How many items would you like?</label>
+      <input type="number" id="quantity" min="0" max="5" value="1">
+    </fieldset>
+
+    <div>
+      <input type="submit" value="Send My Enchanted Order">
+      <input type="reset">
+    </div>
+  </form>
+
+  <h1>Thank You!</h1>
+  <p>Thank you for placing your order! Our enchanted chefs are already preparing your treats.  
+  In the meantime, enjoy a moment of magic below:</p>
+
+  <video controls autoplay muted loop width="300" height="300">
+    <source src="magicwait.mp4">
+  </video>
+
+  <img src="fairycat.png" height="300" alt="Cat wearing a witch hat" title="Magical Companion">
+</body>
+</html>
